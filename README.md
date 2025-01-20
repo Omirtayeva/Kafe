@@ -1,130 +1,110 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дәмді әлем</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Restaurant Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: url('https://example.com/your-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
+            padding: 0;
         }
         header {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 15px;
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
         }
-        header .navbar-brand {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
         }
-        header .nav-link {
-            color: #fff;
-            font-size: 18px;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
         }
-        header .nav-link:hover {
-            color: #ff4500;
+        nav a:hover {
+            text-decoration: underline;
         }
-        section {
-            padding: 50px 20px;
+        .hero {
+            background-image: url('restaurant.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .menu-item {
+            margin: 1rem 0;
         }
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
+            background-color: #333;
+            color: white;
             text-align: center;
-            color: #fff;
+            padding: 1rem 0;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Дәмді әлем</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#main">Басты әлем</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#menu">Ас мәзірі</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cashback">Артықшылықтар</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#promo">Қызықты ұсыныстар</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#reservation">Брондау</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#feedback">Пікірлер</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <h1>Welcome to Our Restaurant</h1>
     </header>
 
-    <!-- Main Section -->
-    <section id="main" class="text-center">
-        <div class="container">
-            <h1>Дәмді әлемге қош келдіңіз!</h1>
-            <p>Сізді ерекше дәмдер мен жылы қарым-қатынас күтіп тұр. Күн сайын біз сіз үшін ең жақсысын дайындаймыз.</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Delicious Food, Great Atmosphere</h1>
+    </div>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We serve the best dishes made with fresh ingredients and lots of love. Join us for an unforgettable dining experience.</p>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Classic Margherita, Pepperoni, and more.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pasta</h3>
+            <p>Spaghetti, Alfredo, and other Italian favorites.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Desserts</h3>
+            <p>Cheesecake, Brownies, and Ice Cream.</p>
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="bg-dark text-white">
-        <div class="container">
-            <h2 class="text-center">Ас мәзірі</h2>
-            <!-- Мәзір контентін осында қосыңыз -->
-        </div>
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@restaurant.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Food Street, Food City</p>
     </section>
 
-    <!-- Cashback Section -->
-    <section id="cashback" class="text-center">
-        <div class="container">
-            <h2>Артықшылықтар</h2>
-            <p>Бізде тамақтану арқылы ерекше сыйлықтарға ие болыңыз және әр тапсырысыңыздан жеңілдік алыңыз.</p>
-        </div>
-    </section>
-
-    <!-- Promo Section -->
-    <section id="promo" class="bg-dark text-white text-center">
-        <div class="container">
-            <h2>Қызықты ұсыныстар</h2>
-            <p>Әр бейсенбі - пицца күні! Үш пицца алсаңыз, төртіншісі тегін.</p>
-        </div>
-    </section>
-
-    <!-- Reservation Section -->
-    <section id="reservation" class="text-center">
-        <div class="container">
-            <h2>Орынға тапсырыс беріңіз</h2>
-            <form>
-                <input type="text" class="form-control" placeholder="Есіміңіз" required>
-                <input type="datetime-local" class="form-control" required>
-                <button type="submit" class="btn btn-primary">Тапсырыс беру</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Feedback Section -->
-    <section id="feedback" class="bg-dark text-white text-center">
-        <div class="container">
-            <h2>Сіздің пікіріңіз</h2>
-            <form>
-                <input type="text" class="form-control" placeholder="Атыңыз" required>
-                <textarea class="form-control" rows="4" placeholder="Пікіріңізді жазыңыз" required></textarea>
-                <button type="submit" class="btn btn-primary">Жіберу</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>© 2024 Дәмді әлем. Барлық құқықтар қорғалған.</p>
+        <p>&copy; 2025 Our Restaurant. All rights reserved.</p>
     </footer>
-
-    <!-- Bootstrap Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
